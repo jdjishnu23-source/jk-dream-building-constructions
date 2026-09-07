@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Dream Building Constructions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-wrapper">
+                <div class="logo-fire">🔥</div>
+                <div class="logo-text">JK Dream Building<br><span>Constructions</span></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="whatsapp-btn" onclick="openWhatsApp()">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Canvas -->
+    <section id="home" class="hero">
+        <div id="canvas-container" class="canvas-container"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fire">JK Dream Building Constructions</h1>
+            <p class="hero-subtitle">Building Dreams into Reality</p>
+            <button class="cta-button" onclick="scrollTo('projects')">Explore Our Work</button>
+        </div>
+    </section>
+
+    <!-- Projects Showcase -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Our Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=300&fit=crop" alt="Modern Building">
+                    <div class="project-info">
+                        <h3>Modern Residential Complex</h3>
+                        <p>Contemporary architecture with sustainable design</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1486324803132-aa5da1dc0d8e?w=400&h=300&fit=crop" alt="Commercial Building">
+                    <div class="project-info">
+                        <h3>Commercial Hub</h3>
+                        <p>State-of-the-art commercial spaces</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop" alt="Luxury Apartments">
+                    <div class="project-info">
+                        <h3>Luxury Apartments</h3>
+                        <p>Premium living with world-class amenities</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1486518023520-ef31f39f1e21?w=400&h=300&fit=crop" alt="Industrial Complex">
+                    <div class="project-info">
+                        <h3>Industrial Complex</h3>
+                        <p>Robust infrastructure for modern industry</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop" alt="Smart City">
+                    <div class="project-info">
+                        <h3>Smart City Project</h3>
+                        <p>Innovative urban development solutions</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1486638150128-d00b0eda6e00?w=400&h=300&fit=crop" alt="Heritage Building">
+                    <div class="project-info">
+                        <h3>Heritage Restoration</h3>
+                        <p>Preserving architectural excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Products & Services</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">🏢</div>
+                    <h3>Residential Construction</h3>
+                    <p>Quality homes built with precision and care</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🏗️</div>
+                    <h3>Commercial Development</h3>
+                    <p>Professional spaces for your business needs</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🏛️</div>
+                    <h3>Infrastructure Projects</h3>
+                    <p>Large-scale construction excellence</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🔧</div>
+                    <h3>Maintenance Services</h3>
+                    <p>Professional upkeep and repairs</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">📐</div>
+                    <h3>Design Consultation</h3>
+                    <p>Expert architectural planning and design</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🌿</div>
+                    <h3>Eco-Friendly Building</h3>
+                    <p>Sustainable construction solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Generated Posters -->
+    <section class="posters">
+        <div class="container">
+            <h2 class="section-title">Featured Campaigns</h2>
+            <div class="posters-grid">
+                <div class="poster-card">
+                    <div class="poster" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <h3>Build Your Dream</h3>
+                        <p>Transforming Visions into Magnificent Structures</p>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <div class="poster" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <h3>Quality First</h3>
+                        <p>Premium Materials, Expert Craftsmanship</p>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <div class="poster" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <h3>Innovation</h3>
+                        <p>Modern Solutions for Tomorrow's Buildings</p>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <div class="poster" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <h3>Sustainability</h3>
+                        <p>Building a Greener Future</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Chat Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-wrapper">
+                <div class="whatsapp-chat">
+                    <div class="chat-header">
+                        <div class="chat-avatar">JK</div>
+                        <div>
+                            <h3>JK Dream Building</h3>
+                            <p>Usually replies in minutes</p>
+                        </div>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message bot-message">
+                            <p>👋 Welcome to JK Dream Building Constructions! How can we help you today?</p>
+                        </div>
+                        <div class="message user-message">
+                            <p>I'm interested in your residential projects</p>
+                        </div>
+                        <div class="message bot-message">
+                            <p>Great! We have excellent residential projects. Would you like to know more about our current offerings?</p>
+                        </div>
+                        <div class="message user-message">
+                            <p>Yes, please share details</p>
+                        </div>
+                        <div class="message bot-message">
+                            <p>Perfect! Let me send you our brochure and project details. You can also call us at +91-XXXXXXXXXX</p>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" placeholder="Type your message..." readonly>
+                        <button onclick="openWhatsApp()">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Construction Avenue, Building City, BC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91-XXXXXXXXXX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+91-XXXXXXXXXX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@jkdreambuilding.com</p>
+                        </div>
+                    </div>
+                    <button class="cta-button" onclick="openWhatsApp()">
+                        <i class="fab fa-whatsapp"></i> Start Chat on WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 JK Dream Building Constructions. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
